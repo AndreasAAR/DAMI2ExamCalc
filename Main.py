@@ -10,7 +10,8 @@ import pandas as pd
 import scipy
 from scipy.stats import stats
 
-
+#equations from
+#https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/t-test/
 
 path = 'ResamplesT.txt'
 data = pd.read_csv(path, sep="\t")
@@ -18,10 +19,23 @@ data_top = data.head()
 print(data_top)
 
 hive = data['HIVE-COTE']
-BOSS = data['BOSS']
+boss = data['BOSS']
 
 #T-test paired
-results = stats.ttest_rel(hive,BOSS)
+results = stats.ttest_rel(hive,boss)
 print(results)
+
+###"Manual" step-wise procedure
+
+#Getting squared and summed differences
+sumSquared = sum((hive**2) -(boss**2))
+sumDiff = sum(hive-boss)
+sumDiffSquared = sumSquared**2
+#Number of samples
+numSamp =
+
+print(sumDiff)
+print(sumSquared)
+print(sumDiffSquared)
 
 
