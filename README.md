@@ -12,3 +12,5 @@ Presentations, understanding of, producing and writing of Scientific research an
 papers were also a big part of the course.
 
 This project is the last question on the hand in for using t-tests to compare classifiers.
+
+Will add PDF of exam when finished(can be removed depending on teacher approval)
