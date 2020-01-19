@@ -32,10 +32,15 @@ sumSquared = sum((hive**2) -(boss**2))
 sumDiff = sum(hive-boss)
 sumDiffSquared = sumSquared**2
 #Number of samples
-numSamp =
+numSamp = len(hive)
 
+print("sumDiff")
 print(sumDiff)
+print("sumSquared")
 print(sumSquared)
+print("sumDiffSquared")
 print(sumDiffSquared)
+print("numSamp")
+print(numSamp)
 
 
